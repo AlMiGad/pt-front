@@ -1,33 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import API from '../api';
+
 //Router
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
+
 //App Components
 import PageHeader from '../components/PageHeader';
 import PageContent from '../components/PageContent';
+import ToolsHeader from '../components/ToolsHeader';
+
 //Material UI
 import { Button, Grid, TextField, InputAdornment, Card, CardContent, CircularProgress, Snackbar } from '@mui/material';
 
 const styles = {
     cgButton: {
         borderRadius: "0.375rem",
-        marginBottom: "4px",
         color: "white",
         background: "linear-gradient(195deg, #66BB6A 0%, #43A047 100%)",
         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
     }
 }
-
-const ToolsHeader = styled.div`
-    width: 100%;
-    text-align: right;
-    padding: 5px 0 25px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-`;
 
 function Product() {
     const params = useParams();
@@ -50,7 +43,7 @@ function Product() {
         if (params.productId) {
             const loadProduct = async () => {
                 try {
-                    const result = await API.products.getProduct(params.productId); // Obtenemos los productos a traves de la API
+                    const result = await API.products.getProduct(params.productId); // Obtenemos el producto a traves de la API
                     if (result.status == 200) {
                         setProduct(result.data); // Actualizamos el array de Productos
                     } else {

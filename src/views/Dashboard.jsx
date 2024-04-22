@@ -6,14 +6,14 @@ import styled from 'styled-components';
 import logo from '../assets/images/logo.png';
 
 //Material UI
-import { AppBar, Grid, Toolbar, List, ListItemButton, ListItemIcon, ListItemText, Container, ListItem } from '@mui/material';
+import { List, ListItemButton, ListItemText, ListItem } from '@mui/material';
 
 //Routes
 import mainMenu from '../routes/mainMenu';
 
 const styles = {
   list:{
-    padding: "8px 15px"
+    padding: "15px"
   },
   listItemButton:{
     borderRadius: "0.375rem",
@@ -75,7 +75,8 @@ function Dashboard({ children }) {
               return (
                 <ListItem key={`mainMenu-${index}`} disablePadding>
                   <ListItemButton component={Link} to={item.path} sx={{...styles.listItemButton, ...(activeRoute ? styles.listItemButtonActive : {})}}>
-                    <ListItemText primary={item.name}/>
+                    <item.icon/>
+                    <ListItemText sx={{marginLeft: "10px"}} primary={item.name}/>
                   </ListItemButton>
                 </ListItem>
               )

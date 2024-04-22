@@ -1,5 +1,7 @@
 //App Views
 import Product from '../pages/Product';
+import Order from '../pages/Order';
+import Home from '../pages/Home';
 
 // @material-ui/icons
 import ProductosIcon from '@mui/icons-material/Inventory';
@@ -18,6 +20,24 @@ var hiddenRoutes = [
         name: "Editar Producto",
         icon: ProductosIcon,
         component: Product
+    },
+    {
+        path: "/nuevo-pedido",
+        name: "Nuevo Pedido",
+        icon: ShoppingCartIcon,
+        component: Order
+    },
+    {
+        path: "/pedido/:orderId",
+        name: "Editar Pedido",
+        icon: ShoppingCartIcon,
+        component: Order
+    },
+    {
+        path: "*",
+        name: "Dashboard",
+        icon: ShoppingCartIcon,
+        component: Home
     }
 ];
 

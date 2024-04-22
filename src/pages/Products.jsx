@@ -1,16 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import styled from 'styled-components';
 import API from '../api';
+
 //App Components
 import PageHeader from '../components/PageHeader';
 import PageContent from '../components/PageContent';
+import ToolsHeader from '../components/ToolsHeader';
+
 //Material UI
 import {Table, TableBody, TableCell, TableContainer, 
     TableHead, TableRow, Paper, Button, CircularProgress,
     IconButton, Snackbar } from '@mui/material';
+
 //Icons
 import DeleteIcon from '@mui/icons-material/Delete';
+
 //SweetAlert
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
@@ -23,12 +27,6 @@ const styles = {
         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
     }
 }
-
-const ToolsHeader = styled.div`
-    width: 100%;
-    text-align: right;
-    padding: 5px 0 25px 0;
-`;
 
 class Product extends React.Component {
     constructor(props) {
@@ -108,8 +106,8 @@ class Product extends React.Component {
                                     <TableRow>
                                         <TableCell sx={{width: "160px"}}>Referencia</TableCell>
                                         <TableCell>Nombre</TableCell>
-                                        <TableCell sx={{width: "110px"}}>Precio</TableCell>
-                                        <TableCell sx={{width: "110px"}}>IVA</TableCell>
+                                        <TableCell sx={{width: "160px"}}>Base Imponible</TableCell>
+                                        <TableCell sx={{width: "160px"}}>IVA</TableCell>
                                         <TableCell sx={{width: "160px"}}>Opciones</TableCell>
                                     </TableRow>
                                 </TableHead>
@@ -141,6 +139,7 @@ class Product extends React.Component {
                     }
                     {/* FIN tabla de productos*/}
                 </PageContent>
+                
                 {/* Zona SnackBar */}
                 <Snackbar
                     open={this.state.snackBar.open}
