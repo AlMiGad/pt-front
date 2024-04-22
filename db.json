@@ -1,0 +1,75 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "referencia": "LAPTOP123",
+      "nombre": "Laptop Ultrabook",
+      "descripcion": "Laptop ultraligera con procesador de última generación",
+      "baseImponible": 799.99,
+      "tax": 21
+    },
+    {
+      "id": "2",
+      "referencia": "MOUSE500",
+      "nombre": "Mouse",
+      "descripcion": "Mouse ergonómico con conexión Bluetooth",
+      "baseImponible": 29.99,
+      "tax": 21
+    },
+    {
+      "id": "3",
+      "referencia": "TECLADO789",
+      "nombre": "Teclado Mecánico RGB",
+      "descripcion": "Teclado mecánico con retroiluminación RGB personalizable",
+      "baseImponible": 79.99,
+      "tax": 21
+    },
+    {
+      "id": "5",
+      "referencia": "IMPRESORA202",
+      "nombre": "Impresora Multifunción",
+      "descripcion": "Impresora láser multifunción con conexión Wi-Fi",
+      "baseImponible": 199.99,
+      "tax": 21
+    },
+    {
+      "id": "6",
+      "referencia": "ROUTER303",
+      "nombre": "Router Gigabit",
+      "descripcion": "Router de alta velocidad con puertos Gigabit Ethernet",
+      "baseImponible": 89.99,
+      "tax": 21
+    },
+    {
+      "id": "ws-9J1m",
+      "referencia": "COCA300",
+      "nombre": "Coca Cola 300ml",
+      "descripcion": "¡Refresca tu día con la nueva Coca-Cola de 300ml, la compañera perfecta para cualquier momento! Con su delicioso sabor único y refrescante, esta bebida icónica te ofrece una experiencia de sabor inigualable en cada sorbo. Ya sea que estés disfrutando de un almuerzo, relajándote con amigos o simplemente necesites un impulso de energía, esta Coca-Cola de tamaño práctico y conveniente está lista para satisfacer tu sed y deleitar tu paladar. ¡Disfruta de la chispa de la vida con Coca-Cola de 300ml!",
+      "baseImponible": 1.5,
+      "tax": 21
+    },
+    {
+      "id": "eLPhuxM",
+      "referencia": "FLIMON250",
+      "nombre": "Fanta Limón 250ml",
+      "descripcion": "¡Disfruta del sabor refrescante y delicioso de la Fanta de limón en su presentación de 300ml! Perfecta para saciar tu sed y deleitar tu paladar en cualquier momento del día, esta bebida efervescente te ofrece una explosión de sabor cítrico que te transportará a momentos llenos de frescura y alegría. Ya sea que estés relajándote en casa, disfrutando de un día al aire libre o compartiendo momentos especiales con amigos y familiares, la Fanta de limón de 300ml es la opción ideal para refrescarte y disfrutar de un momento lleno de burbujas y sabor. ¡Descubre la magia del limón con Fanta y haz que cada sorbo sea una experiencia inolvidable!",
+      "baseImponible": 1.67,
+      "tax": 21
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
